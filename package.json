@@ -1,6 +1,6 @@
 {
   "name": "@chainner/node-path",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A polyfill to use Node's path module in the browser",
   "main": "src/path.js",
   "exports": {
