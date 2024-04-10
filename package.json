@@ -1,0 +1,29 @@
+{
+  "name": "@chainner/node-path",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "src/path.js",
+  "exports": {
+    ".": "./src/path.js",
+    "./win32": "./src/win32.js",
+    "./posix": "./src/posix.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaiNNer-org/node-path.git"
+  },
+  "keywords": [
+    "node",
+    "path",
+    "browser"
+  ],
+  "author": "Michael Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaiNNer-org/node-path/issues"
+  },
+  "homepage": "https://github.com/chaiNNer-org/node-path#readme"
+}
