@@ -5,7 +5,7 @@ const emptyEnv = {};
 
 const processShim = {
   get platform() {
-    if (typeof process !== "object") {
+    if (typeof process === "object") {
       const pplatform = process?.platform;
       if (typeof pplatform === "string") {
         return pplatform;
@@ -23,7 +23,7 @@ const processShim = {
   },
 
   get env() {
-    if (typeof process !== "object") {
+    if (typeof process === "object") {
       const env = process?.env;
       if (typeof env === "object" && env !== null) {
         return env;
@@ -34,7 +34,7 @@ const processShim = {
   },
 
   cwd() {
-    if (typeof process !== "object" && typeof process?.cwd === "function") {
+    if (typeof process === "object" && typeof process?.cwd === "function") {
       return process.cwd();
     }
 
